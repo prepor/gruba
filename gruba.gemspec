@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gruba}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andrew Rudenko"]
   s.date = %q{2009-09-20}
   s.default_executable = %q{gruba}
-  s.description = %q{Best grabber DSL}
+  s.description = %q{Smarty site grabber DSL}
   s.email = %q{ceo@prepor.ru}
   s.executables = ["gruba"]
   s.extra_rdoc_files = [
@@ -39,10 +39,11 @@ Gem::Specification.new do |s|
      "spec/gruba_spec.rb",
      "spec/spec_helper.rb"
   ]
+  s.homepage = %q{http://github.com/prepor/gruba}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{Best grabber DSL}
+  s.summary = %q{Smarty site grabber DSL}
   s.test_files = [
     "spec/gruba_spec.rb",
      "spec/spec_helper.rb"
