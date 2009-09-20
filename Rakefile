@@ -5,10 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "gruba"
-    gem.summary = %Q{Best grabber DSL}
-    gem.description = %Q{Best grabber DSL}
+    gem.summary = %Q{Smarty site grabber DSL}
+    gem.description = %Q{Smarty site grabber DSL}
     gem.email = "ceo@prepor.ru"
     gem.authors = ["Andrew Rudenko"]
+    gem.homepage = "http://github.com/prepor/gruba"
     gem.add_development_dependency "rspec"
     gem.add_development_dependency "yard"
     

@@ -6,8 +6,10 @@ require 'activesupport'
       if attr[:id] != 'div_news' && attr[:id] != 'div_conference'
         get "a" do 
         review! :title => body
-        link attr[:href] do
-          review[:body] = get("center[2]").try :body
+        if attr[:href] =~ /\.htmls?/i
+          link attr[:href] do
+            review[:body] = get("center[2]").try :body
+          end
         end
         end
       end
@@ -27,4 +29,5 @@ Gruba.add_rescue WWW::Mechanize::ResponseCodeError, :retry => false do |e|
     Gruba.logger.info "404 error"
   end
 end
+
 
