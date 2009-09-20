@@ -5,13 +5,18 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "gruba"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Best grabber DSL}
+    gem.description = %Q{Best grabber DSL}
     gem.email = "ceo@prepor.ru"
-    gem.homepage = "http://github.com/prepor/gruba"
     gem.authors = ["Andrew Rudenko"]
     gem.add_development_dependency "rspec"
     gem.add_development_dependency "yard"
+    
+    gem.add_dependency "nokogiri"
+    gem.add_dependency "mechanize"
+    gem.add_dependency "nokogiri"
+    gem.add_dependency "xmpp4r-simple"
+    
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
