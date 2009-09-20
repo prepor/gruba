@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift('../lib')
+require 'rubygems'
+require 'gruba'
+
+require 'optparse'
+
+options = {}
+
+optparse = OptionParser.new do|opts|
+  opts.banner = "Usage: gruba [options] recipe_path"
+
+  options[:verbose] = false
+  opts.on( '-v', '--verbose', 'Output more information' ) do
+    options[:verbose] = true
+  end
+
+  options[:logfile] = nil
+  opts.on( '-l', '--logfile FILE', 'Write log to FILE' ) do |file|
+    options[:logfile] = file
+  end
+
+  opts.on( '-h', '--help', 'Display this screen' ) do
+    puts opts
+    exit
+  end
+end
+
+optparse.parse!
+Gruba.cmd(options)
