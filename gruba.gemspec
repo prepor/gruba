@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gruba}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andrew Rudenko"]
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bin/gruba",
+     "gruba.gemspec",
      "lib/gruba.rb",
      "lib/gruba/element.rb",
      "lib/gruba/helpers.rb",
